@@ -136,7 +136,13 @@ class pretty_recent_widget extends WP_Widget {
                     ?>
                         <div class="widget-row widget-first-item">
                             <a href="<?= $permalink ?>">
+                            <?
+                                if ( !empty( $thumbnail ) ) {
+                            ?>
                                 <div class="post-image" style="background-image: url('<?= $thumbnail ?>')"></div>
+                            <?
+                                } // End if
+                            ?>
                                 <div class="post-data">
                                     <h4><?= $post_title ?></h4>
                                     <p><?= $authors ?><span style="float: right;"><em><?= $post_cat_out ?></em></span></p>
