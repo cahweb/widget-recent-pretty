@@ -131,7 +131,7 @@ class pretty_recent_widget extends WP_Widget {
                         $thumbnail = get_the_post_thumbnail_url($id);
 
                     else
-                        $thumbnail = get_stylesheet_directory_uri() . "/public/images/empty.png";
+                        $thumbnail = '';
 
                     ?>
                         <div class="widget-row widget-first-item">
