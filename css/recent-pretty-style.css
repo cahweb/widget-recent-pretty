@@ -1,0 +1,36 @@
+/* Main SCSS file for the Recent Posts (Pretty) Widget plugin. */
+.widget-row {
+  margin: 0; }
+  .widget-row a:hover {
+    text-decoration: none; }
+  .widget-row:not(:first-of-type) {
+    border-top: 1px solid #c8c8c8;
+    margin-top: 5px; }
+  .widget-row .post-data {
+    margin: 0; }
+    .widget-row .post-data h4 {
+      font-size: 14px;
+      color: black; }
+    .widget-row .post-data p {
+      font-size: 12px;
+      color: black;
+      margin: 5px 0px;
+      line-height: 1.15; }
+
+.widget-first-item a {
+  display: flex; }
+
+.widget-first-item .post-image {
+  margin: 0;
+  flex: 1;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px; }
+
+.widget-first-item .post-data {
+  flex: 3;
+  padding-left: 5px;
+  margin: 0;
+  display: inline-block !important; }
