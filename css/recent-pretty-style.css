@@ -18,11 +18,14 @@
       line-height: 1.15; }
 
 .widget-first-item a {
-  display: flex; }
+  display: flex;
+  display: -webkit-flex; }
 
 .widget-first-item .post-image {
   margin: 0;
   flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
@@ -31,6 +34,8 @@
 
 .widget-first-item .post-data {
   flex: 3;
+  -webkit-flex: 3;
+  -ms-flex: 3;
   padding-left: 5px;
   margin: 0;
   display: inline-block !important; }
